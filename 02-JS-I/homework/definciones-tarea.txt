@@ -1,0 +1,106 @@
+      **************** 1- ¿que es una variable? ***************
+
+Una variable es un espacio en memoria que reservas para almacenar un valor, podemos decir que una variable es como una caja en donde puedes guardar cosas, entonces las variables son esas cajas donde puedes guardar un dato o valor y se guarda en la memoria para despues poder utilizar ese dato o valor guardado y utilizarlo en el programa.
+
+para crear una variable se utiliza la palabra reservada "var" con esta palabra identificas que es una variable como cuando en una caja le pones un pedazo de cinta y le colocas el nombre de juguetes y guardas ally tus juguetes o le pones libros y guardas ally tus libros entonces con esa etiqueta identificas que hay en cada caja entonces con la palabra reservada "var" tu identificas que esa es una variable, luego le pones nombre a tu variable, el nombre tiene que ir de acuerdo con lo que vas a almacenar o guardar por ejemplo si tu quieres guardar tu edad en una variable no le pondras "nombre" a tu variable porque no quiere almacenar tu nombre si no tu edad entonces lo logico seria que le pongas de nombre "edad" y para asignar un valor utiliza el signo de igual (=) seguido del valor a almacenar. por ejemplo:
+
+var nombre = "Bryan";
+
+donde "var" es la palabra que me dice que es una variable, "nombre" es el nombre de la variable y "Bryan" es el valor que yo guarde en la cajita llamada "nombre" y esa cajita llamada "nombre" se almacena en la memoria lista para ser utilizada en el programa.
+
+var edad = 10;
+var apellido = "Osorio";
+var sueldo = 150.45;
+
+        **************** 2- ¿que es un string? ***************
+
+Un String tambien son conocidos como cadena de caracteres, es un tipo de dato en los lenguajes de programacion que puedes almacenar dentro de una variable, un String es un conjunto de caracteres(letras) unidas entre ellos, por ejemplo las letras H , O , L , A unidas entre si es HOLA entonces hola es una cadena de caracteres (String) porque tiene 4 caracteres o letras, los string se pueden identificar que siempre tiene que ir dentro de comillas dobles "" o dentro de comillas simples "" eso quiere decir que un numero entre comillas tambien se considera un string por ejemplo:
+
+var palabra = "Hola mundo";
+var numero = "24";
+var letra = "a"
+var nombre = 'Bryan';
+var edad = '21';
+
+todos estos ejemplos son cosiderados como string.
+
+
+        **************** 3- ¿que es una funcion? ***************
+
+Una funcion es un bloque de codigo que te sirve para dividir tu codigo en pequeñas secciones de codigo, hace que los bloques de codigo sea independientes en pocas palabras subdivide las tareas en tareas mas pequeñas y evita que se genere una repeticion de codigo innecesaria.
+
+para crear una funcion se utiliza la palabra reservada "function", luego se escribe el nombre de la funcion (siempre de acuerdo a lo que la funcion va a realizar) si vas a hacer una funcion para sumar dos numeros no le pondras de nombre "saludar" porque no va de acuerdo a lo que la funcion va a realizar, despues del nombre ponemos parentesis () y despues llaves {} dentro de las llaves tiene que ir todo nuestro codigo. por ejemplo 
+
+function miFuncion(){        
+    Codigo de la funcion
+}
+
+function saludar(){
+    console.log("Hola como estan");
+}
+
+para ejecutar una funcion solo tienes que llamarla por su nombre y colocas los parentesis
+
+saludar() <- ejecutando una funcion
+
+a las funciones tambien se le puede pasar paramentros, los parametros son variables que pueden ser utilizadas dentro de la funcion, dichas variables se colocan dentro de los parentesis, si pondras mas de un parametro tienes que separarlos por una coma (,) por ejemplo:
+
+function sumar(n1 , n2){
+    console.log("La suma es de:" + n1 + n2);
+}
+
+para asignarle valores a las variables que sirven como parametros en las funciones, ese valor se le asigna en el momento que ejecutamos esa funcion, dicho valores se les conoce como argumentos, cuando las variables estan en la funcion se le conoce como parametros pero cuando le pasamos los valores a esos parametros en el momento que ejecutamos la funcion se le conoce como argumentos.
+
+suma(10 , 10) <- llamada de la funcion con los valores(argumentos)
+
+la cantidad de argumentos a pasar depende de la cantidad de parametros que hay en la funcion y tiene un orden el primer algumento que ingreses es el valor del primer parametro de la funcion, el segundo argumento que ingreses el el valor del segundo parametro en la funcion y asi sucesivamente.
+
+muchas veces no necesitamos imprimir algo dentro de las funciones sino que necesitamos retornar el valor de dicha funcion para eso tenemos la palabra reservada "return" que nos retorna el valor de la funcion, dicho valor tenemos que almacenarlo y luego mostrarlo en pantalla, por ejemplo
+
+function resta(n1 , n2){
+    var resultado = (n1 - n2);
+    return resultado;
+}
+
+var result = resta(10 , 2);
+console.log("La resta es de: " + resta);
+
+ene sta funcion hicimos una resta, el resultado de la resta lo almacenamos en la variable "resultado" y retornamos el valor que hay en "resultado" ya que lo retornamos lo guardamos en la variable "result" y el resultado lo mostramos por consola.
+
+        **************** 4- ¿que es un if? ***************
+una estructura if (si en español) tambien es conocido como una estructura condicional, donde depende de una condicion asi sera el bloque de codigo a ejecutarse por ejemplo supongamos que tu mama te dice: si arreglas tu cuarto te voy a dejar salir a jugar con tus amigos pero si no arreglas tu cuarto no te dejare salir  a jugar con tus amigos, en este ejemplo tu mama te ha puesto una condicion la condicion es que arregles tu cuarto y tenes dos opciones si lo arreglas vas a salir con tus amigos y si no lo arreglas no vas a salir con tus amigos, una de las dos se tiene que cumplir o lo arreglas y salis o no lo arreglas y no salis pero no se puede cumplir ambas porque no podes salir a jugar y a la vez no salir a jugar, pues asi es una condicional "if" se va a ejecutar un bloque de codigo dependiendo si se cumple una condicion o si no se cumple una condicion.
+
+para crear una estructura condicional se utiliza la palabra reservada "if" luego van parentesis () dentro de los parentesis va la condicion y luego van las llaves {} dentro de las llaves va el bloque de codigo, despues de las llaves se utiliza la palabra reservada "else" que en español significa "sino" luego van llaves {} y dentro de las llaves va el bloque de codigo, si no se ejecuta el "if" automaticamente se ejecuta el "else" pero no se pueden ejecutar ambas. ejemplo:
+
+if (edad >= 18){
+    console.log("Eres mayor de edad");
+}else{
+    console.log("Eres menor de edad");
+}
+
+esto en español seria:
+
+si (edad es mayor o igual a 18){
+    me imprime: "Eres mayor de edad";
+}sino{
+    me imprime: "Eres menor de edad";
+}
+
+en este ejemplo estamos evaluando si una persona es mayor o menor de edad si se cumple la condicion que es mayor de edad se ejecuta el bloque de condigo donde me imprime que es mayor de edad pero si no se cumple la condicion (osea es menor de edad) se ejecuta el bloque de codigo donde me imprime que es menor de edad pero no se puede ejecutar ambas porque no podes ser mayor de edad y a la misma vez menor de edad, el codigo a ejecutar depende de una condicion si se cumple o no se cumple.
+
+    **************** 5- ¿que son los valores booleanos? ***************
+
+los valores booleanos es un tipo de dato que puedes almacenar en una variable y solo tiene dos resultados: verdadero(true) o falso(false), o es SI o es NO , es 1(verdadero) o es 0(es falso) ejemplo:
+
+console.log(5 > 10);
+
+en este ejemplo estamos evaluando si el numero 5 es mayor a 10 por lo tanto esa respuesta es FALSA (false) 5 no es mayor a 10.
+
+console.log(5 < 10);
+
+ahora estamos evaluando si el numero 5 es menor a 10 esta respuesta es VERDADERA (true) por 5 si es menor a 10
+
+los valores booleanos trabajan muy de la mano con las estructuras condicionales ya que el resultado de una condicion siempre sera un valor booleano regresemos al ejemplo anterior de la edad, si la condicion se cumple es porque eres mayor de edad entonces ese es un resultado verdadero (true) porque si eres mayor de edad pero si la condicion no se cumple entonces el resultado es falso (false) porque no eres mayor de edad.
+
+
+
