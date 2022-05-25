@@ -1,0 +1,48 @@
+       *************** ¿que es un arreglo? ***************
+
+Un arreglo tambien conocido como "array" o "Matriz" es una coleccion de datos, eso quiere decir que puede almacenar mas de un dato (yas sea numero, cadena de texto, booleano, funciones e incluso hasta otros arreglos) es como un conjunto de cajitas en donde vas guardado algo, es ocmo que en una cajita guardes juguetes en otra cajita guardes zapatos etc, entonces los arreglos es un conjunto de cajitas donde se almacena o se guarda muchos y diferentes tipos de datos, a cada cajita de un arreglo en donde guardas un dato se le puede identificar con un numero al cual se le denomina "indice" dicho numero o indice empieza desde el numero cero (0) hasta N cantidad de numero.
+
+para crear un arreglo tenemos que utilizar los corchetes [] (brackets en ingles) por ejemplo:
+
+var arreglo = [];
+
+en el ejemplo de arriba he creado un arreglo llamado "arreglo" dentro de esos corchetes van todos los datos a almacenar, cada dato tiene que ir separado por una coma (,). por ejemplo:
+
+arreglo = [10 , 10.5 , "Bryan" , true];
+           0     1        2        3
+
+en el array denominado "arreglo" he almacenado o guardado 4 datos uno es un numero entero(sin punto decimal) otro es un numero flotante(con punto decimal)  otro es una cadena de caracteres o String(se identifican porque van dentro de comillas) y el ultimo es un dato de tipo booleano. y cada uno de estos datos se guardan en una cajita que podemos identificar con el numero o indice, el numero 10 se almaceno en el indice 0 osea que es el primer dato del arreglo, el numero 10.5 se almaceno en el indice 1 y es el segundo dato del arreglo y asi sucesivamente
+
+para acceder a los datos de los arreglos podemos hacerlo por medio de su identificador o su indice. por ejemplo:
+
+console.log(arreglo[0]) <- me devuelve el numero 10
+
+en el ejemplo de arriba me devolvera el numero 10 ya que es el numero que esta almacenado en la cajita o en el indice numero 0.
+
+console.log(arreglo[1]) <- me devuelve 10.5
+console.log(arreglo[2]) <- me devuelve "Bryan"
+console.log(arreglo[3]) <- me devuelve true
+
+tambien podemos asignar valores a un arreglo de manera individual, osea que a cada cajita le puedo asignar un valor a traves de su identificador o indice. por ejemplo:
+
+var numeros = [];
+
+numeros[0] = 10;
+numeros[1] = 5;
+numeros[2] = 15;
+
+en el ejemplo de arriba hemos creado un arreglo llamado "numeros" a lo cual hemos accedido a cada cajita con su identificador y le hemos asignado un valor al indice 0 le asignamos el valor de 10 accediendo a traves de su identificador y asi sucesivamente con todas las demas cajitas de un arreglo.
+
+tambien podemos saber cuantos elementos tiene un arreglo para eso utilizamos la funcion "length" que nos dice cuantos elementos tiene un arreglo. por ejemplo:
+
+console.log(numeros.length) <- nos devolvera 3
+
+en el ejemplo de arriba el resultado nos devolvera un 3 ya que el arreglo "numeros" tiene 3 elementos el numero 10, el numero 5 y el numero 15.
+
+para poder recorrer todo los datos de un arreglo podemos hacerlo con el ciclo for. por ejemplo:
+
+for(var i=0; i < numeros.length; i++){
+    console.log(numeros[i]);
+}
+
+con este ciclo for le estamos diciendo que comience con el numero 0 ya que los arreglos comienzan desde el numero 0 y termine con la cantidad de elementos del arreglo menos 1 ¿porque? porque los arreglos empiezan desde cero no desde el uno, miremos el arreglo de "numeros" tiene 3 valores pero el primer valor empieza desde el cero 0 despues el segundo valor empieza en el 1 y el tercer valor empieza en el indice 2 entonces va de 0 hasta 2 y esto son 3 valores entonces le decimos al ciclo que vaya desde el 0 hasta el 2 asi me recorres todos los elementos del arreglo, si yo le pongo del 0 hasta el 3 entonces serian 4 elementos y mi arreglo no tiene 4 elementos tiene solo 3 por lo tanto me daria error, imprimimos en consola los elementos ¿porque en la pocision i? porque s el numero que va ir incrementanto, por ejemplo en la primera vuelta del ciclo la variable i vale 0 porque asi lo hemos asignado ya que los arreglos empiezan desde cero entonces a la hora de imprimir me imprimira el valor que hay en el indice 0 luego de la vuelta la variable i se incrementa en 1 entonces ahora i vale 1 y a la hora de imprimir me imprimira el valor del indice 1 y en la otra vuelta la variable i vale 2 porque se incremento en 1 y a la hora de imprimir me imprimiria el valor que hay en el indice 2 y asi sucesivamente con todos los elementos del arreglo.
