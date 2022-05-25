@@ -1,0 +1,57 @@
+        **************** ¿Que es el ciclo for? ***************
+
+El ciclo for tambien se le conoce como bucle for o loops for es una estructura de datos conocido como estructuras repetitivas, imaginate que tenes que imprimir los numeros del 1 al 100 ¿pondrias mil veces el console.log(numero) para imprimirlo mil veces? creeria yo que no, tomaria mucho tiempo hacerlo, tomaria muchas lineas de codigo el poder hacerlo, ocuparia muchos recursos el hacer eso, entonces para evitar todas esas perdidas tenemos las estructuras repetitivas como el ""ciclo for" que nos permite hacer una accion una cantidad indefinida de veces.
+
+para crear un "ciclo for" utilizamos la palabra reservada "for" luego van parentesis () dentro de los parentesis tenemos que colocar 3 cosas:
+1-inicio del ciclo.
+2-hasta donde va a llegar el ciclo.
+3-el incrementador del ciclo.
+despues de los parentesis () van las llaves {} y dentro de las llaves va todo nuestro codigo a ejecutar. por ejemplo:
+
+for(var i=1; i<=10; i++){
+    console.log(i);
+}
+
+en este ejemplo el var i=1 es el inicio del ciclo, eso quiere decir que el ciclo empezara con el numero uno, i<=10 es el limite del ciclo o hasta donde va a llegar, con esto le hemos dicho que empieze el ciclo en el numero 1 y termine hasta el numero 10 y el i++ es el incrementador, con esto queremos decirle al ciclo que empieze el numero 1 y termine hasta el numero 10 y se vaya incrementando de 1 en 1 eso quiere decir que la primera vuelta del ciclo el numero es 1, en la segunda vuelta el ciclo como se incremena en 1 el numero es 2 en la tercera vuelta del ciclo el numero es 3 y asi sucesivamente hasta llegar al numero limite que es el 10.
+
+      **************** Operadores logicos ***************
+
+Los operadores logicos nos sirven para poder combinar mas de una expresion y darnos cuenta si las expresiones son verdaderas o falsas o si una expresion es verdadera y la otra falsa, tenemos 3 operadores logicos que son:
+
+1-operador AND: tambien conocido como Y o doble ampersand &&, este operador logico devuelve un resultado verdadero(true) si ambas expresiones a evaluar son verdaderas pero si una de las dos expresiones es falsa entoces el resultado que nos dara es falsa(false). por ejemplo:
+
+if(10 > 5 && 5 < 10){
+    console.log("verdadero");
+}
+
+en este ejemplo el resultado que nos dara es verdadera(true) porque el numero 10 si es mayor a 5 y el numero 5 si es menor a 10 entonces ambas expresiones son ciertas por ende el resultado es verdadero.
+
+if(10 > 5 && 10 > 50){
+    console.log("falso");
+}
+
+en este ejemplo el resultado es falso porque si es cierto que 10 es mayor a 5 pero 10 no es mayor a 50 entonces una expresion es verdadera y la otra expresion es falsa y recordemos que el operador AND solo devuelve verdadero si ambas expresiones son verdadera pero como tenemos una expresion falsa el resultado que nos arrojara es falso.
+
+2-operador OR: tambien conocido como O o doble barra vertical ||, este operador logico nos devuelve un resultado verdadero(true) si una de las expresiones es verdadera a diferencia del operador AND el operador OR no necesita que las dos expresiones sean verdaderas solo necesita que una expresion sea verdadera y la unica forma que el operador OR nos de un resultado falso(false) es que ambas expresiones sean falsas. por ejemplo:
+
+if(10 > 5 || 5 < 3){
+    console.log("verdadero");
+}
+
+en este ejemplo el resultado nos da verdadero ya que una de las expresiones es verdadera ya que 10 si es mayor a 5 pero 5 no es menor a 3, el resultado es verdadero ya que el operador OR con una sola expresion que sea verdadera el resultado que me devolvera es verdadero.
+
+if(10 < 5 || 5 > 20){
+    console.log("falso");
+}
+
+en este ejemplo el resultado que nos dara es falso, ya que ninguna de las dos expresiones es verdadera ya que 10 no es menor a 5 y 5 no es mayor a 20 entonces el resultado que me da es falso y recuerde la unica forma que el operador OR me de falso es que ambas expresiones sean falsas.
+
+3-Operador NOT: tambien conocido NEGACION o con el simbolo de admiracion ! este operador logico me devuelve el resultado contrario al ingresado, eso quiere decir que si mi resultado es verdadero(true) pero utilizo el operador de negacion me entonces yo cambio el resultado de verdadero a falso. por ejemplo:
+
+console.log(!true);
+
+en este ejemplo el resultado que me da es falso ya que estoy utilizado el operador de negacion y estoy negando(cambio el resultado a lo contrario que es) osea si es verdadero lo cambio a falso y si es falso lo cambio a verdadero por lo tanto el  resultado es falso.
+
+console.lo(!false);
+
+en este caso es lo contrario yo niego(cambio) el resultado de falso a verdadero.
