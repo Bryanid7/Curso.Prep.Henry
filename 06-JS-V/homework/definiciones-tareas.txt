@@ -1,0 +1,25 @@
+  *************** ¿que es el prototype? ***************
+
+Todos los objetos en javascript desciende de otros objetos, dicho objeto se le denomina como "prototipo" este objeto prototipo brinda de muchas caracteristicas a los objetos que desciende de ellos por ejemplo los arreglos [] desciende del objeto ARRAY entonces el protitipo de un arreglo es el objeto ARRAY dicho objeto ARRAY le brinda de muchos metodos a los arreglos como el metodo push() que permite agregar un nuevo elemento a una arreglo o el metodo pop() que permite eliminar el ultimo elemento de un arreglo o el metodo unshift() que permite agregar un elemento nuevo al principio de un arreglo o el metodo shift() que le permite eliminar el primer elemento de un arreglo.
+
+entonces estos objetos prototipos son los que les brindan todas estas caracteristicas a los objetos que nosotros creamos como un arreglo  u otros objetos.
+
+var numeros = [1 , 2 , 3];
+numeros.push(4);
+
+en el ejemplo de arriba vemos como utilizo un metodo que me dio el prototipo de los arreglos que es el objeto ARRAY lo que javascript hace tras banbalina osea no lo vemos es que a la hora de ocupar un metodo de un arreglo va javascript a verificar al prototipo ARRAY para ver si existe ese metodo ya que existe te permite utilizarlo.
+
+*************** ¿que es un constructor de clases? ***************
+
+un constructor de clases es un metodo(funcion) especial que le pertenece a una clase, una clase solo es una plantilla para crear objetos, este metodo constructor se ejecuta cuando nosotros instanciamos o creamos un objeto de la clase, dentro de ese constructor van todas las propiedades que se van a utilizar en dicha clase. por ejemplo:
+
+class Persona{
+    constructor(nombre , edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+}
+
+var persona1 = new Persona("Bryan" , 21);
+
+en el ejemplo de arriba hemos creado una clase Persona dentro de la clase persona hemos el creado el constructor, tiene que tener ese nombre "constructor" ya que es una palabra reservada ese constructor es una funcion donde le pasas los parametros a utilizar, y para instancia una clase utilizamos la palabra reservada NEW asi nosotros creamos un objeto de la clase Persona, si en el constructoe hay parametros esos parametros hay que pasarselos en el momento que nosotros instanciemos o creemos un objeto de la clase.
