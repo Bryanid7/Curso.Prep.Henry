@@ -1,0 +1,65 @@
+        *************** ¿que es un objeto? ****************
+Un objeto es un tipo de dato muy similar a los arreglos, mientras que los arreglos tienen un conjunto de datos de una forma ordenada ya que tiene un indice que los ordena por el cual se puede acceder a sus datos pero los objetos no son asi los objetos no son ordenados porque no tiene un indice que los pocisiones sino que tu puedes acceder a ellos de manera desordenada porque lo haces por medio de sus propiedades, los objetos manejan los datos por medio de "clave y valor" donde la clave es el identificador y el valor es el valor que se le asigna a un identificador o propiedad.
+
+
+
+para crear un arreglo ocupabamos los corchetes () a diferencia de los objetos se crea con parentesis ().
+
+var objeto = {}
+
+en el ejemplo anterior vemos la creacion de un objeto.
+
+    *************** ¿que son las propiedades? ****************
+
+las propiedades son las caracteristicas de un objeto por ejemplo una taza una taza es un objeto que tiene propiedades(caracteristicas) por ejemplo tiene un color , un diseño , un peso, material de que esta hecho, una persona tambien tiene propiedades (caracteristicas) un color , peso , altura. por ejemplo
+
+var persona = {
+    nombre: "Bryan",
+    color: "Trigueño",
+    edad: 21,
+    altura: 1.60
+}
+
+en el ejemplo de arriba creamos un objeto persona con muchas de las caracteristicas que una persona tiene como color , edad , nombre , altura.
+
+    *************** ¿que son los metodos? ****************
+
+los metodos son las mismas funciones solo que dentro de un objeto no se les llama funciones sino que metodos pero cumplen y tienen la misma funcion que una funcion. por ejemplo:
+
+var saludar = {
+    nombre: "Saludar",
+    saludo: function(){
+        console.log("Hola " + saludar.nombre)
+    }
+}
+
+en el ejemplo de arriba vemos un metodo(una funcion) dentro de un objeto.
+
+*************** Notacion de punto y notacion de corchetes ****************
+
+para poder acceder a los datos de un objeto tenemos dos formas de hacerlo:
+
+1-notacion de corchetes: esta forma es la misma forma de acceder a los datos de un arreglo dode utilizamos los corchetes y dentro de los corchetes no va un indice porque recuerden que los objetos no tiene un orden sino que dentro de los corchetes va el nombre de la propiedad(caracteristica). por ejemplo
+
+saludar[nombre];
+saludar[saludo]();
+
+en el ejemplo de arriba estoy accediendo a los valores del objeto saludar por medio de la notacion de corchetes tanto de una caracteristica como de un metodo.
+
+2-notacion por puntos: los objetos tienen una segunda forma de acceder a sus datos y es por la notacion de puntos en vez de utilizar parentesis utilizas un punto, pones el nombre del objeto luego un punto y luego la propiedad a acceder. por ejemplo:
+
+saludar.nombre;
+saludar.saludo();
+
+en el ejemplo de arriba vemos como se accede a los datos de un objeto por notacion de puntos.
+
+         *************** Ciclo  for .. in ****************
+
+un objeto no puede ser recorrido con el ciclo for normal asi que javascript nos da un variante del ciclo for para poder recorrer objetos y es el ciclo "for in" por ejemplo:
+
+for(clave in saludar){
+    console.log(clave + saludar[clave]);
+}
+
+en el ejemplo anterior estamos recorriendo un objeto llamado saludar en donde todos los valores se traspasan de saludar a lña variable clave por eso imprimimos la variable clave donde me imprimira todas las propiedades(caracteristicas) del objeto y tambien imprimimos saludar en su pocision clave para que me imprima todos los valores del objeto ¿porque no saludar[i]? porque no es un arreglo, no hay un indice que recorrer y tampoco lo hacemos con el ciclo for normal por eso ponemos saludar[clave] ya que no son indices con los que accedes a los valores de un objeto sino con su propiedad y todas las propiedades estan en la variable clave ya que el ciclo los traslada de saludar a lña variable clave.
+
