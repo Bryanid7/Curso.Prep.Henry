@@ -1,0 +1,15 @@
+  *************** ¿que es una funcion callback? ***************
+
+una funcion callback es nada mas que una funcion siendo un parametro de otra funcion, asi como en los objetos a las funciones se les denomina "METODOS" asi a las funciones que son utilizadas como parametro de una funcion se le denomina "CALLBACKS" a estas funciones que son paramentros de otras funciones osea los callbacks pueden recibir parametros e incluso puede ser invocadas. por convencion a las funciones callbacks se les identifica por el nombre de "cb". por ejemplo:
+
+function suma(n1 , n2){
+    return n1 + n2;
+}
+
+function sumarNumeros(n1 , n2 , cb){
+    return "La suma es de : " +  cb(n1 , n2);
+}
+
+sumarNumeros(10 , 10 , suma);
+
+en el ejemplo anterior tenemos una funcion llamada suma en donde como paramentro le ingresamos dos valores y lo que hacemos es retornar la suma de los valores, tambien tenemos una funcion llamada sumar numeros donde recibe tres parametros los dos valores a sumar mas la funcion callback osea una funcion que se utiliza como paramentro y retorna la funcion callback con los dos valores a sumar, luego mandamos a llamar la funcion sumarNumeros donde le pasamos los tres valores los dos numeros a sumar y una funcion dicha funcion es la de suma donde me retorna el resultado de la suma.
