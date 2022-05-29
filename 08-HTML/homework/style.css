@@ -1,0 +1,38 @@
+body{
+    background-image: url("img/espacio.jpg");
+    background-repeat: no-repeat;
+}
+.main-title , .subtitle , .title-h4{
+    color: cyan;
+}
+
+.img{
+    width: 400px;
+}
+
+#thirdDiv{
+    width: 600px;
+    height: 500px;
+    background-color: gold;
+    padding: 50px;
+    border: 10px double #000;
+   
+}
+
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+    color: cyan;
+   
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
